@@ -1,4 +1,4 @@
-# JAVASCRIPT GO BRRR
+# JAVASCRIPT GO BRRR 🥶
 *JavaScript function that turns your* `<brrr></brrr>` *into* `<br><br><br><br>`
 
 Instead of writing this:
