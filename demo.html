@@ -1,0 +1,28 @@
+<html>
+<body>
+	This is some text 1
+	<br />
+	This is some text 2
+	<brr></brr>
+	This is some text 3
+	<brrr></brrr>
+	This is some text 4
+	<brrrr></brrrr>
+	This is some text 5
+	<brrrrrrrrrrrrrrrrrr></brrrrrrrrrrrrrrrrrr>
+	This is some text 6
+</body>
+<script>
+function brr() {
+	[].filter.call(document.getElementsByTagName("*"), el => (/brr+/i.test(el.tagName))).forEach(function(el){
+		count = el.tagName.substring(1).length;
+		let brs = [];
+		for (i = 0; i < count; i++) {
+			brs.push(document.createElement("br"));
+		}
+		el.replaceWith(...brs);
+	});
+}
+brr();
+</script>
+</html>
